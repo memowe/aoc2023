@@ -1,0 +1,30 @@
+cabal-version:  3.0
+name:           aoc2023
+version:        0.1.0.0
+synopsis:       My advent of code 2023 solutions
+homepage:       https://github.com/memowe/aoc2023
+license:        MIT
+license-file:   LICENSE
+author:         Mirko Westermeier
+maintainer:     mirko@westermeier.de
+build-type:     Simple
+
+common base
+  default-language:   Haskell2010
+  default-extensions: OverloadedStrings
+  ghc-options:        -Wall
+  build-depends:      base ^>=4.17.2.0
+                    , containers
+                    , extra
+                    , microlens-platform
+                    , split
+
+executable day01_1
+  import:         base
+  hs-source-dirs: day01
+  main-is:        solution_1.hs
+
+executable day01_2
+  import:         base
+  hs-source-dirs: day01
+  main-is:        solution_2.hs
