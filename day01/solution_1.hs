@@ -1,7 +1,13 @@
 module Main where
 
+import Data.Char
+
+extractTwoDigitNumber :: String -> Int
+extractTwoDigitNumber cs = read $ head digits : [last digits]
+  where digits = filter isDigit cs
+
 process :: String -> String
-process input = "Hello from day 01 / 1\nInput was " ++ input
+process = show . sum . map extractTwoDigitNumber . lines
 
 main :: IO ()
 main = interact process
