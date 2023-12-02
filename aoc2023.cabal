@@ -38,3 +38,13 @@ executable day02_2
   import:         base
   hs-source-dirs: day02
   main-is:        solution_2.hs
+
+executable day03_1
+  import:         base
+  hs-source-dirs: day03
+  main-is:        solution_1.hs
+
+executable day03_2
+  import:         base
+  hs-source-dirs: day03
+  main-is:        solution_2.hs
