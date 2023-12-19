@@ -78,3 +78,8 @@ executable day06_2
   import:         base
   hs-source-dirs: day06
   main-is:        solution_2.hs
+
+executable day07_1
+  import:         base
+  hs-source-dirs: day07
+  main-is:        solution_1.hs
