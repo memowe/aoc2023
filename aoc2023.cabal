@@ -17,6 +17,7 @@ common base
                     , containers
                     , extra
                     , microlens-platform
+                    , mtl
                     , split
 
 executable day01_1
@@ -88,3 +89,9 @@ executable day07_2
   import:         base
   hs-source-dirs: day07
   main-is:        solution_2.hs
+
+executable day08_1
+  import:             base
+  hs-source-dirs:     day08
+  main-is:            solution_1.hs
+  default-extensions: TemplateHaskell
