@@ -95,3 +95,9 @@ executable day08_1
   hs-source-dirs:     day08
   main-is:            solution_1.hs
   default-extensions: TemplateHaskell
+
+executable day08_2
+  import:             base
+  hs-source-dirs:     day08
+  main-is:            solution_2.hs
+  default-extensions: TemplateHaskell
